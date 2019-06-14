@@ -1,9 +1,9 @@
 [![npm](https://img.shields.io/npm/v/react-native-analytics-segment-io.svg)](https://www.npmjs.com/package/react-native-analytics-segment-io)
 [![travis](https://img.shields.io/travis/leoilab/react-native-analytics-segment-io/master.svg)](https://travis-ci.org/leoilab/react-native-analytics-segment-io)
 
-# IMPORTANT NOTE
+## IMPORTANT NOTE ⚠️
 
-This repository is deprecated and is here only for transparency.
+This package is deprecated and is here only for transparency. We recommend using https://github.com/segmentio/analytics-react-native
 
 # A React Native wrapper for Segment Analytics
 
