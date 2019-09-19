@@ -10,23 +10,9 @@ import com.facebook.react.bridge.ReadableMap;
 import com.segment.analytics.Analytics;
 import com.segment.analytics.Properties;
 import com.segment.analytics.Traits;
-import com.segment.analytics.android.integrations.adjust.AdjustIntegration;
-import com.segment.analytics.android.integrations.amplitude.AmplitudeIntegration;
-import com.segment.analytics.android.integrations.appboy.AppboyIntegration;
-import com.segment.analytics.android.integrations.appsflyer.AppsflyerIntegration;
-import com.segment.analytics.android.integrations.bugsnag.BugsnagIntegration;
-import com.segment.analytics.android.integrations.comscore.ComScoreIntegration;
-import com.segment.analytics.android.integrations.countly.CountlyIntegration;
-import com.segment.analytics.android.integrations.crittercism.CrittercismIntegration;
 import com.segment.analytics.android.integrations.firebase.FirebaseIntegration;
-import com.segment.analytics.android.integrations.flurry.FlurryIntegration;
 import com.segment.analytics.android.integrations.google.analytics.GoogleAnalyticsIntegration;
 import com.segment.analytics.android.integrations.intercom.IntercomIntegration;
-import com.segment.analytics.android.integrations.localytics.LocalyticsIntegration;
-import com.segment.analytics.android.integrations.mixpanel.MixpanelIntegration;
-import com.segment.analytics.android.integrations.nielsendcr.NielsenDCRIntegration;
-import com.segment.analytics.android.integrations.quantcast.QuantcastIntegration;
-import com.segment.analytics.android.integrations.tapstream.TapstreamIntegration;
 import com.segment.analytics.android.integrations.branch.BranchIntegration;
 
 import java.util.HashMap;
@@ -95,44 +81,8 @@ public class SegmentModule extends ReactContextBaseJavaModule {
      * @param analyticsBuilder
      */
     private void setupIntegrations(Analytics.Builder analyticsBuilder) {
-        if (isClassAvailable("com.segment.analytics.android.integrations.adjust.AdjustIntegration")) {
-            analyticsBuilder.use(AdjustIntegration.FACTORY);
-        }
-
-        if (isClassAvailable("com.segment.analytics.android.integrations.amplitude.AmplitudeIntegration")) {
-            analyticsBuilder.use(AmplitudeIntegration.FACTORY);
-        }
-
-        if (isClassAvailable("com.segment.analytics.android.integrations.appboy.AppboyIntegration")) {
-            analyticsBuilder.use(AppboyIntegration.FACTORY);
-        }
-
-        if (isClassAvailable("com.segment.analytics.android.integrations.appsflyer.AppsflyerIntegration")) {
-            analyticsBuilder.use(AppsflyerIntegration.FACTORY);
-        }
-
-        if (isClassAvailable("com.segment.analytics.android.integrations.bugsnag.BugsnagIntegration")) {
-            analyticsBuilder.use(BugsnagIntegration.FACTORY);
-        }
-
-        if (isClassAvailable("com.segment.analytics.android.integrations.comscore.ComScoreIntegration")) {
-            analyticsBuilder.use(ComScoreIntegration.FACTORY);
-        }
-
-        if (isClassAvailable("com.segment.analytics.android.integrations.countly.CountlyIntegration")) {
-            analyticsBuilder.use(CountlyIntegration.FACTORY);
-        }
-
-        if (isClassAvailable("com.segment.analytics.android.integrations.crittercism.CrittercismIntegration")) {
-            analyticsBuilder.use(CrittercismIntegration.FACTORY);
-        }
-
         if (isClassAvailable("com.segment.analytics.android.integrations.firebase.FirebaseIntegration")) {
             analyticsBuilder.use(FirebaseIntegration.FACTORY);
-        }
-
-        if (isClassAvailable("com.segment.analytics.android.integrations.flurry.FlurryIntegration")) {
-            analyticsBuilder.use(FlurryIntegration.FACTORY);
         }
 
         if (isClassAvailable("com.segment.analytics.android.integrations.google.analytics.GoogleAnalyticsIntegration")) {
@@ -141,26 +91,6 @@ public class SegmentModule extends ReactContextBaseJavaModule {
 
         if (isClassAvailable("com.segment.analytics.android.integrations.intercom.IntercomIntegration")) {
             analyticsBuilder.use(IntercomIntegration.FACTORY);
-        }
-
-        if (isClassAvailable("com.segment.analytics.android.integrations.localytics.LocalyticsIntegration")) {
-            analyticsBuilder.use(LocalyticsIntegration.FACTORY);
-        }
-
-        if (isClassAvailable("com.segment.analytics.android.integrations.mixpanel.MixpanelIntegration")) {
-            analyticsBuilder.use(MixpanelIntegration.FACTORY);
-        }
-
-        if (isClassAvailable("com.segment.analytics.android.integrations.nielsendcr.NielsenDCRIntegration")) {
-            analyticsBuilder.use(NielsenDCRIntegration.FACTORY);
-        }
-
-        if (isClassAvailable("com.segment.analytics.android.integrations.quantcast.QuantcastIntegration")) {
-            analyticsBuilder.use(QuantcastIntegration.FACTORY);
-        }
-
-        if (isClassAvailable("com.segment.analytics.android.integrations.tapstream.TapstreamIntegration")) {
-            analyticsBuilder.use(TapstreamIntegration.FACTORY);
         }
 
         if (isClassAvailable("com.segment.analytics.android.integrations.branch.BranchIntegration")) {
